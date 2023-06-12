@@ -51,7 +51,11 @@ function fugir(){
             document.getElementById('fala').innerHTML = "O QUE VOCÊ TÁ FAZENDO? Tá vendo esse botão grandao aí embaixo? APERTA NELE LOGO!";
         }
     }else{
-        if(counterFuga > 3)return;
+        if(counterFuga > 3){
+            ++counterFuga;
+            if(counterFuga === 5)btnNao.style.display = "none";
+            return;
+        }
         penseNasCriancas();
 
         document.getElementById('fala').innerHTML = "XÚNIOR????????? PENSE NAS CRIANÇAS! OLHA COMO A GENTE É BONITINHO JUNTO"
