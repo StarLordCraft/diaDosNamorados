@@ -90,7 +90,7 @@ main > #fala{
     font-weight: bold;
 }
 
-main > button{
+main  button{
     height: 4rem;
     width: 6rem;
 
@@ -105,14 +105,14 @@ main > button{
     text-align: center;
 }
 
-main > button:hover{
+main  button:hover{
     background-color: rgb(255, 59, 59);
 
     width: 6.5rem;
     height: 4.5rem;
 }
 
-main > #sim{
+main  #sim{
     margin-right: 0.7rem;
 }
 
