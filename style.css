@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: #ff00ea;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 40rem;
+    height: 50rem;
+    
+    text-align: center;
+    
+    border-radius: 5rem;
+    
+    background-color: #fff;
+    
+    position: relative;
+    z-index: 0;
+}
+
+#pensenascriancas{
+    text-align: center;
+
+    width: 40rem;
+    height: 35rem;
+
+    display: none;
+
+    border-radius: 5rem 5rem 0 0;
+
+    background-color: white;
+
+    overflow: hidden;
+}
+
+#pensenascriancas > h1{
+    margin-bottom: 10rem;
+}
+
+#countainer{
+    display: flex;
+    
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+
+    height: fit-content;
+}
+
+#countainer img{
+    object-fit: cover;
+
+    width: 40rem;
+    height: 32.5rem;
+}
+
+main > h1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    font-weight: 900;
+
+    font-size: 3rem;
+}
+
+main > #fala{
+    color: red;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+main > button{
+    height: 4rem;
+    width: 6rem;
+
+    background-color: red;
+
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+
+    cursor: pointer;
+
+    text-align: center;
+}
+
+main > button:hover{
+    background-color: rgb(255, 59, 59);
+
+    width: 6.5rem;
+    height: 4.5rem;
+}
+
+main > #sim{
+    margin-right: 0.7rem;
+}
+
+main > #nao{
+    position: absolute;
+    z-index: 2;
+}
+
