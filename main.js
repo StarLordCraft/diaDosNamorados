@@ -67,4 +67,5 @@ btnNao.addEventListener('mouseover', fugir);
 btnNao.addEventListener('touchstart', (event) => {
     event.preventDefault;
     fugir();
+    event.stopPropagation();
 })
